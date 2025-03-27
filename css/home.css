@@ -1,0 +1,77 @@
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 250px;
+  height: auto;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column; /* Placera barnen vertikalt */
+  justify-content: center; /* Centrera barnen vertikalt */
+  align-items: center; /* Centrera barnen horisontellt */
+  text-align: center; /* Centrera texten */
+  border: black 1px solid;
+  border-radius: 15px;
+}
+.card img {
+  width: 190px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.card p {
+  width: 100%; /* Ta upp hela sin yta */
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center; /* Centrera barnen vertikalt */
+  align-items: center; /* Centrera barnen horisontellt */
+  text-align: left;
+  padding: 2rem;
+}
+.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.information div p {
+  max-width: 400px;
+  width: 100%; /* Ta upp hela sin yta */
+  text-align: justify; /* Justera texten för att fylla hela bredden */
+  /* Öka mellanrummet mellan orden */
+}
+.information h2 {
+  max-width: 400px;
+}
+.information img {
+  width: 300px;
+  align-items: end;
+  justify-content: end;
+  border-radius: 15px;
+  object-fit: cover;
+  background-position: center;
+}
+.card {
+  background-color: #ecd8b8;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 900px) {
+  .information {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .information img {
+    width: 100%;
+  }
+}
